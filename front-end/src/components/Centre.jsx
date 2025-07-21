@@ -20,15 +20,12 @@ function Centre() {
       <div className="max-w-7xl mx-auto md:flex items-center justify-between mb-16">
         <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
           <h1 className="text-5xl font-extrabold mb-6 leading-tight text-blue-800 dark:text-yellow-400">
-            Welcome to{" "}
-            <span className="text-yellow-500 dark:text-yellow-300">
-              React Blog
-            </span>
+            Welcome {" "}
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            Share your story,{" "}
+            Go through our stories ,{" "}
             <span className="text-green-900 dark:text-green-400 font-semibold">
-              inspire the world!
+              get inspired
             </span>
             Explore with us the important world of financial literacy
           </p>
@@ -36,7 +33,7 @@ function Centre() {
             onClick={() => navigate('/addarticle')}
             className="px-8 py-3 bg-blue-800 text-white dark:bg-yellow-500 dark:text-gray-900 text-lg rounded-lg shadow-lg hover:bg-blue-700 dark:hover:bg-yellow-400 transition-colors duration-300"
           >
-            Read • Write • Repeat
+            Read and get educated
           </button>
         </div>
 
@@ -55,31 +52,10 @@ function Centre() {
           Explore & Share
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-400 mt-4">
-          Your creativity deserves the perfect platform. Let's dive into the
-          next steps.
+          Being frugal with your finances is a skill and a skill can be learnt and or enhaced.
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto md:flex items-center justify-between mb-16">
-        <div className="md:w-1/3 flex justify-center mt-10 mb-10 md:mb-0">
-          <img
-            src={Create}
-            alt="Create Blog Illustration"
-            className="rounded-lg shadow-xl hover:scale-105 transform transition duration-300"
-            width={500}
-          />
-        </div>
-
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-4xl font-bold mb-4 text-blue-800 dark:text-yellow-400">
-            Create Blog
-          </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300">
-            Start your journey by creating blogs that matter. Share your voice
-            with the world, inspire others, and build your personal brand.
-          </p>
-        </div>
-      </div>
 
       <div className="max-w-7xl mx-auto md:flex items-center justify-between mb-16">
         <div className="md:w-1/2 text-center md:text-left">
@@ -87,8 +63,7 @@ function Centre() {
             Read Blogs
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Dive into a world of creativity and knowledge. Explore blogs from
-            diverse topics and find the inspiration you've been searching for.
+            Dive into a world of freedom and everything in between
           </p>
         </div>
 
@@ -118,11 +93,8 @@ function Centre() {
                 Our Mission
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-96">
-                Our mission is to empower developers by providing high-quality
-                content on React and front-end technologies. We foster a
-                collaborative community where developers of all experience
-                levels share ideas, solve problems, and stay up-to-date with the
-                latest trends in the React ecosystem and web development.
+                Our mission is to empower young adults and everyone in between to take better care of their finances and 
+                everything that comes with it.
               </p>
             </div>
 
@@ -136,11 +108,7 @@ function Centre() {
                 Our Vision
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-96">
-                Our vision is to become the leading platform for React
-                developers, providing accessible tutorials, in-depth guides, and
-                expert insights. We aim to cultivate a community where
-                developers of all skill levels innovate, grow, and contribute to
-                the advancement of React and modern web development practices.
+                Our vision is to become the leading financial advisors in the region
               </p>
             </div>
 
@@ -154,12 +122,7 @@ function Centre() {
                 Our Values
               </h3>
               <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-96">
-                We value knowledge sharing, continuous learning, and
-                community-driven development. Integrity, inclusivity, and
-                innovation guide us. We prioritize creating content that is both
-                informative and engaging while fostering an open, supportive
-                environment where all voices are heard and respected by our
-                community.
+                We value the community that we are building
               </p>
             </div>
 
@@ -167,90 +130,7 @@ function Centre() {
         </div>
       </section>
 
-      <section id="testimonials" className="py-16 bg-gradient-to-r from-blue-100 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-bold font-serif mb-8 text-indigo-900 dark:text-yellow-300">
-            What Our Community Says
-          </h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300 mb-10">
-            See what our contributors and users have to say about us!
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 text-lg">
-            {[
-              {
-                name: "Alex Johnson",
-                role: "Web Developer",
-                image: "https://randomuser.me/api/portraits/men/32.jpg",
-                text: "An amazing platform! Writing and sharing blogs has never been this fun and engaging!",
-              },
-              {
-                name: "Sarah Williams",
-                role: "Content Creator",
-                image: "https://randomuser.me/api/portraits/women/45.jpg",
-                text: "The UI is absolutely stunning. Writing content here feels like a premium experience!",
-              },
-              {
-                name: "David Smith",
-                role: "Tech Enthusiast",
-                image: "https://randomuser.me/api/portraits/men/67.jpg",
-                text: "A great place for bloggers. The design and user experience are top-notch!",
-              },
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="relative bg-white dark:bg-gray-900 bg-opacity-90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-gray-300 dark:border-gray-700 transform transition-all hover:-translate-y-2"
-              >
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full border-4 border-indigo-500 dark:border-yellow-400 shadow-lg"
-                  />
-                </div>
-                <div className="mt-10 text-center">
-                  <h3 className="text-xl font-semibold text-indigo-900 dark:text-yellow-300">
-                    {testimonial.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</p>
-                  <p className="mt-4 text-gray-700 dark:text-gray-300 italic">
-                    “{testimonial.text}”
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-
-      <section className="relative py-16 overflow-hidden">
-        <div className="relative container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2
-              className="text-4xl font-bold mb-8 text-blue-800 dark:text-yellow-400 
-                       bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600 
-                       dark:from-yellow-400 dark:to-yellow-300"
-            >
-              Our Contributors
-            </h2>
-
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              Powered by passionate{" "}
-              <span className="text-blue-800 dark:text-yellow-400 font-semibold">
-                developers and creators.
-              </span>{" "}
-              Together, we're building something extraordinary. Join our
-              community of{" "}
-              <span className="text-blue-800 dark:text-yellow-400 font-semibold">
-                brilliant minds
-              </span>{" "}
-              who bring this project to life!
-            </p>
-
-            <ContributorsLink classes="w-14 h-14" />
-          </div>
-        </div>
-      </section>
 
       <section id="how-to-get-started" className="relative py-16 overflow-hidden">
         <div className="relative container mx-auto px-4">
@@ -264,30 +144,26 @@ function Centre() {
             </h2>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              1.
-              <span className="text-blue-800 dark:text-yellow-400 font-semibold">
-                {" "}
-                Login
-              </span>{" "}
-              or{" "}
+              1. 
               <span className="text-blue-800 dark:text-yellow-400 font-semibold">
                 Register
               </span>{" "}
               onto the website. <br />
               <br />
-              2. Once logged in, Select the button onto which you are interested
+              2. Once REGISTERED, Select the button onto which you are interested
               to.
               <span className="text-blue-800 dark:text-yellow-400 font-semibold">
                 {" "}
-                Read or Write.
+                Read
               </span>{" "}
               <br />
               <br />
-              3. Once done with writing{" "}
+              3. Once done with reading{" "}
               <span className="text-blue-800 dark:text-yellow-400 font-semibold">
-                click submit.
+                select more content that you like and your feed will be curated with the content that 
+                you have selected
               </span>{" "}
-              Thanks for contributing to our website.
+              Thanks visiting. Come back again for more content.
             </p>
           </div>
         </div>

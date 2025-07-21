@@ -15,7 +15,7 @@ function Footer() {
               <img src={logo} alt="Logo" className="w-20 p-3 rounded-full" />
             </Link>
             <p className="text-gray-600 dark:text-gray-400">
-            Share your story, inspire the world. A platform for nature lovers.
+            Go through daily blog posts to get inspired by the
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <a href="#" className="group">

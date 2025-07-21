@@ -696,7 +696,7 @@ const Navbar = () => {
                         : 'bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600'
                       }`}
                   >
-                    Login / Register
+                    Register
                   </button>
                 )}
 
